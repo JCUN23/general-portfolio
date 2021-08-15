@@ -1,0 +1,219 @@
+// CREATED BY JOSH CUNNINGHAM
+// MICHIGAN VS MICHIGAN STATE 'CHOOSE YOUR OWN ADVENTURE'
+// 16 DIFFERENT ENDINGS, BOTH GOOD AND BAD
+// THE ONLY WAY TO WIN THE GAME IS TO SCORE A TOUCHDOWN
+
+#include <iostream>
+int main () {
+
+std::string name;
+  
+std::cout << "Welcome back to B1G Football, two minutes left\n"; std::cout << "in today and Michigan is down 6 points against\n"; std::cout << "Michigan State. For those of you just tuning\n"; std::cout << "in, Shea Patterson went down with an elbow\n"; std::cout << "injury late in the third quater. It looks like\n"; std::cout << "Coach Harbaugh is going to put in the freshman\n"; std::cout << "quarterback to try and save this game for\n";
+std::cout << "Michigan.\n";
+std::cout << "What's the freshman quarterback's name: \n";
+std::cin >> name;
+std::cout << "                             \n";
+std::cout << name << " prepares to take their first snap.\n";
+std::cout << "First and 10 on States's 40 yard line.\n";
+std::cout << "It's on " << name << " to call the play.\n";
+std::cout << "                             \n";
+std::cout << "What play are you calling?\n";
+std::cout << "1)Throw it deep to the reciever on the right.\n";
+std::cout << "2)Hand the ball off to the running back.\n";
+std::cout << "3)Pass to the Tight End running a slant.\n";
+
+int answer1;
+std::cin >> answer1;
+
+if (answer1 == 1) {
+std::cout << "The ball is swatted down by the cornerback.\n";
+std::cout << "Second and 10. " << name << " has to be better.\n";
+std::cout << "                             \n";
+  
+int answer2;
+std::cout << "What are you calling next?\n";
+std::cout << "1)Try to run the same play again.\n";
+std::cout << "2)Fake a throw to the left and run yourself.\n";
+std::cout << "3)Toss the ball to your halfback to the right.\n";
+std::cin >> answer2;
+std::cout << "                             \n";
+while (answer2 == 1) {
+  std::cout << "It didn't work before, maybe change it up.\n";
+  std::cout << "What play are you running: ";
+  std::cin >> answer2;
+}
+if (answer2 == 2) {
+  std::cout << name << " makes a great run. Third and 3.\n";
+  std::cout << "Only one chance left to get the touchdown.\n";
+  std::cout << "Now what " << name << " ?\n";
+int answer6;
+std::cout << "1)You need big yards. Throw it deep left.\n";
+std::cout << "2)The defense will never expect a run.\n";
+std::cout << "3)Hit the quick slant left and let him run.\n";
+std::cin >> answer6;
+std::cout << "                             \n";
+  if (answer6 == 1) {
+  std::cout << "OH NO! WHAT AN INTERCEPTION BY MSU!\n";
+  std::cout << "So close Michigan, but " << name << " fails!\n";
+  std::cout << "Victory for MSU!.\n";
+  return 0;
+}
+  else if (answer6 == 2) {
+  std::cout << "The D never sees a run coming!\n";
+  std::cout << name << " charges down the field. TOUCHDOWN!\n";
+  std::cout << "MICHIGAN WINS THE FOOTBALL GAME!";
+  return 0;
+}
+  else if (answer6 == 3) {
+    std::cout << "A beautiful pass by " << name << "!\n";
+    std::cout << "NO ONE CAN STOP HIM! TOUCHDOWN MICHIGAN!\n";
+    std::cout << name << " did it! They won the game!\n";
+    return 0;
+}
+  else if (answer2 == 3) {
+    std::cout << " An impressive move sees a 12 yard gain.\n";
+    std::cout << "First and 10 Michigan.\n";
+    std::cout << "Only one chance left to get the touchdown.\n";
+  std::cout << "How will " << name << " react?\n";
+int answer7;
+std::cout << "1)Deep throw down the right.\n";
+std::cout << "2)Deep throw down the left.\n";
+std::cout << "3)Take it all the way yourself.\n";
+std::cin >> answer7;
+std::cout << "                             \n";
+if (answer7 == 1) {
+  std::cout << "THE BALL IS INTERCEPTED!\n";
+  std::cout << name << " chokes right at the end!\n";
+  return 0;
+}
+else if (answer7 == 2) {
+  std::cout << "THE BALL IS INTERCEPTED!\n";
+  std::cout << name << " chokes right at the end!\n";
+  return 0;}
+  else if (answer7 == 3) {
+    std::cout << name << " is hit HARD! FUMBLE ON THE PLAY!\n";
+    std::cout << "MSU RECOVERS. MICHIGAN LOSE THE GAME!\n";
+    return 0;
+  }
+}
+}
+}
+else if (answer1 == 2){
+std::cout << "The running back finds a gap but can't break\n";
+std::cout << "all the way through the D. Second and 4.\n";
+std::cout << "                             \n";
+std::cout << "How will " << name << " react?\n";
+int answer3;
+std::cout << "1)Hand the ball off and try to get first down.\n";
+std::cout << "2)Lob the ball over the DL to your tight end.\n";
+std::cout << "3)Fake a throw right and run it yourself left.\n";
+std::cin >> answer3;
+std::cout << "                             \n";
+  while (answer3 == 1) {
+  std::cout << "The defense looks ready to blitz. Try again.\n";
+  std::cout << "What play are you running: ";
+  std::cin >> answer3;
+}
+  if (answer3 == 2) {
+  std::cout << name << " makes a great pass. First and 10.\n";
+  std::cout << "Only one chance left to get the touchdown.\n";
+    std::cout << "How will " << name << " react?\n";
+int answer8;
+std::cout << "1)It's all on you. Run it home yourself!\n";
+std::cout << "2)Run a screen play down the left side.\n";
+std::cout << "3)Hail Mary down the right.\n";
+std::cin >> answer8;
+std::cout << "                             \n";
+if (answer8 == 1) {
+  std::cout << "OH NO! " << name << " fumbles the ball!\n";
+  std::cout << "IT'S RECOVERED BY MSU! GAME OVER FOR UofM!\n";
+  return 0;
+}
+else if (answer8 == 2) {
+  std::cout << "The screen makes a few great blocks!\n";
+  std::cout << "There's the gap Michigan needs! TOUCHDOWN!\n";
+  std::cout << "MICHIGAN WINS THE FOOTBALL GAME!\n";
+  return 0;
+}
+  else if (answer8 == 3) {
+    std::cout << "OH NO ITS INTERCEPTED!\n";
+    std::cout << "VICTORY FOR MSU.\n";
+    return 0;
+  }
+  
+}
+  else if (answer3 == 3) {
+    std::cout << "An impressive move sees a 7 yard gain.\n";
+    std::cout << "First and 10 Michigan.\n";
+    std::cout << "Only one chance left to get the touchdown.\n";
+      std::cout << "How will " << name << " react?\n";
+int answer9;
+std::cout << "1)Deep throw down the right.\n";
+std::cout << "2)Deep throw down the left.\n";
+std::cout << "3)Take it all the way yourself.\n";
+std::cin >> answer9;
+std::cout << "                             \n";
+  if (answer9 == 1) {
+  std::cout << "THE BALL IS INTERCEPTED!\n";
+  std::cout << name << " chokes right at the end!\n";
+  return 0;
+}
+  else if (answer9 == 2) {
+  std::cout << "THE BALL IS INTERCEPTED!\n";
+  std::cout << name << " chokes right at the end!\n";
+  return 0;}
+  else if (answer9 == 3) {
+    std::cout << name << " is hit HARD! FUMBLE ON THE PLAY!\n";
+    std::cout << "MSU RECOVERS. MICHIGAN LOSE THE GAME!\n";
+    return 0;
+  }
+}
+}
+else if (answer1 == 3){
+std::cout << "The tight end makes an amazing catch!\n";
+std::cout << "15 yards gained on the play.\n";
+std::cout << "A great start for " << name << ". What's next?\n";
+std::cout << "                             \n";
+std::cout << "1)Take if yourself, you got this!\n";
+std::cout << "2)Bullet pass to the WR on the right.\n";
+std::cout << "3)Run the same play again.\n";
+int answer4;
+std::cin >> answer4;
+std::cout << "                             \n";
+ while (answer4 == 1) {
+  std::cout << "You've never run before. Maybe not now.\n";
+  std::cout << "What play are you running: \n";
+  std::cin >> answer4;
+}
+ if (answer4 == 2) {
+  std::cout << "A beautiful pass. First and Goal Michigan!\n";
+  std::cout << "One play left. It's all on " << name << ".\n";
+int answer5;
+std::cout << "1)You're the hero. Jump the DL for the TD.\n";
+std::cout << "2)Trust your running back. Hand it off.\n";
+std::cout << "3)Your WR hasn't failed you. Hit him again.\n";
+std::cin >> answer5;
+std::cout << "                             \n";
+    if (answer5 == 1) {
+  std::cout << "OH NO! " << name << " fumbled the ball!\n";
+  std::cout<< "Michigan State recovers the ball. MSU Wins!\n";
+  return 0;
+}
+    else if (answer5 == 2) {
+  std::cout << "TOUCHDOWN MICHIGAN! " << name << " did it!.\n";
+  std::cout << "MICHIGAN WINS THE GAME!";
+  return 0;
+}
+    else if (answer5 == 3) {
+  std::cout << "A GREAT CATCH! TOUCHDOWN MICHIGAN.\n";
+  std::cout << name << "WINS IT FOR MICHIGAN!.\n";
+  return 0;
+}
+ }
+ else if (answer4 == 3) {
+    std::cout << "OH NO! " << name << " throws a pick!\n";
+    std::cout << "Game over! Michigan State Wins!\n";
+    return 0;
+  }
+}
+}
